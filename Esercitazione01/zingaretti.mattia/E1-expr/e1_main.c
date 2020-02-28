@@ -12,7 +12,6 @@ void test(int c) {
 }
 
 int main() {
-
     test(16);
     printf("Risultato: %d/%d\n", score, trials);
 
