@@ -4,16 +4,19 @@ my_strcmp:
 	movl 4(%esp), %ecx	# const char* c = s1;
     	movl 8(%esp), %edx	#const char* d = s2;
 	
+L:
 	movb (%edx),%al
-L: 	cmpb (%ecx), %al	#if( *c != *d ) 	
-	jne E                   #goto E;
-	notb (%ecx)
-	cmpb $0, (%ecx)        #if(!*c) goto E
-	notb (%ecx)  
+ 	cmpb (%ecx), %al 	#if( *c != *d ) 	
+	jne E
+	movb (%ecx),%ah	                   #goto E;
+	notb %ah
+	cmpb $0, %ah        #if(!*c) goto E  
 	jne E
 	incl %ecx		#c++
 	incl %edx 	 	#d++
    	jmp L
-E: movb (%ecx),%al
+	ret
+E: 
+   movb (%ecx),%al
    subb (%edx), %al 		#*c -*d;
    ret
