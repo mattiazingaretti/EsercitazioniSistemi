@@ -1,0 +1,52 @@
+GNU gdb (Ubuntu 8.3-0ubuntu1) 8.3
+Copyright (C) 2019 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from e1...
+(No debugging symbols found in e1)
+(gdb) Dump of assembler code for function f:
+   0x00001266 <+0>:	mov    $0x2,%edx
+   0x0000126b <+5>:	add    $0x3,%edx
+   0x0000126e <+8>:	mov    $0x2,%eax
+   0x00001273 <+13>:	add    $0x3,%eax
+   0x00001276 <+16>:	mov    $0x4,%ecx
+   0x0000127b <+21>:	sub    $0x2,%ecx
+   0x0000127e <+24>:	imul   %ecx,%eax
+   0x00001281 <+27>:	sub    %edx,%eax
+   0x00001283 <+29>:	imul   $0x3,%eax,%eax
+   0x00001286 <+32>:	inc    %eax
+   0x00001287 <+33>:	ret    
+   0x00001288 <+34>:	xchg   %ax,%ax
+   0x0000128a <+36>:	xchg   %ax,%ax
+   0x0000128c <+38>:	xchg   %ax,%ax
+   0x0000128e <+40>:	xchg   %ax,%ax
+End of assembler dump.
+(gdb) Dump of assembler code for function f:
+   0x00001266 <+0>:	mov    $0x2,%edx
+   0x0000126b <+5>:	add    $0x3,%edx
+   0x0000126e <+8>:	mov    $0x2,%eax
+   0x00001273 <+13>:	add    $0x3,%eax
+   0x00001276 <+16>:	mov    $0x4,%ecx
+   0x0000127b <+21>:	sub    $0x2,%ecx
+   0x0000127e <+24>:	imul   %ecx,%eax
+   0x00001281 <+27>:	sub    %edx,%eax
+   0x00001283 <+29>:	imul   $0x3,%eax,%eax
+   0x00001286 <+32>:	inc    %eax
+   0x00001287 <+33>:	ret    
+   0x00001288 <+34>:	xchg   %ax,%ax
+   0x0000128a <+36>:	xchg   %ax,%ax
+   0x0000128c <+38>:	xchg   %ax,%ax
+   0x0000128e <+40>:	xchg   %ax,%ax
+End of assembler dump.
+(gdb) quit
