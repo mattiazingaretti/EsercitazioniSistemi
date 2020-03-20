@@ -27,6 +27,7 @@ void test(short* b1, int n1, short* b2, int n2, int sol) {
 }
 
 int main() {
+	//printf("%d\n", sizeof(node_t));
     short b1[] = { 1, 1, 2, 3, 5, 8, 13, 21 };
     int n1 = sizeof(b1)/sizeof(short);
 
