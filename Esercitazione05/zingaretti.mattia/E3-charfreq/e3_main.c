@@ -11,7 +11,7 @@ void test(const char *s, char ok) {
 }
 
 int main() {
-
+	//printf("%d\n",sizeof(unsigned));
     test("This.is.by.far.the.dumbest.test-ever", 46);
     test("Seventh son of a seventh son seems so soorth", 32);
     test("ab bb cb daaa", 97);
